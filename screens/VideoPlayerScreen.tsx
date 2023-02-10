@@ -20,7 +20,7 @@ const VideoScreen: React.FC<VideoScreenType> = ({ route }) => {
         isMuted={true}
         shouldPlay
         isLooping
-        style={{ width: 300, height: 300 }}
+        style={styles.videoStyle}
       />
     </View>
   )
@@ -30,6 +30,7 @@ export default VideoScreen
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 200,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
@@ -37,5 +38,9 @@ const styles = StyleSheet.create({
   video: {
     width: '100%',
     height: '100%'
+  },
+  videoStyle: {
+    height: 500,
+    width: 200
   }
 })
