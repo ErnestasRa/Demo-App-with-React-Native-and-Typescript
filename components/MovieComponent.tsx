@@ -8,7 +8,7 @@ interface MovieComponentType {
 
 const MovieComponent: React.FC<MovieComponentType> = ({ title, onPress }) => (
   <TouchableHighlight onPress={onPress} underlayColor="#DDDDDD">
-    <View>
+    <View style={styles.container}>
       <View style={styles.movieImage} />
       <Text style={styles.movieTitle}>{title}</Text>
     </View>
@@ -17,10 +17,15 @@ const MovieComponent: React.FC<MovieComponentType> = ({ title, onPress }) => (
 export default MovieComponent
 
 const styles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   movieImage: {
     backgroundColor: 'darkgrey',
-    height: 200,
-    width: 200
+    height: 150,
+    width: 150
   },
   movieTitle: {
     marginTop: 20
