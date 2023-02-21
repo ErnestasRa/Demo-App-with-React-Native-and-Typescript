@@ -7,7 +7,7 @@ import DetailsPage from './screens/DetailsScreen'
 import VideoScreen from './screens/VideoPlayerScreen'
 
 const Stack = createNativeStackNavigator()
-
+//test
 const App: React.FC = () => (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
